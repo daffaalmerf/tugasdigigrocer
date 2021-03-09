@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Login DigiGrocer - 1904207 - Daffa Almer Fauzan</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="image/grocery.png">
+        <script defer src="js/script.js"></script>
+    </head>
+    <body>
+
+    <!-- Login Information -->
+    
+    <div class="container">
+        <div class="row">
+            <section class="section-about">
+                <div>
+                    <h1>Welcome!</h1>
+                    <h2>DigiGrocer</h2>
+                    <h3>Fulfill Your Grocery Needs</h3>
+                    <ul class="features">
+                        <li class="features-list">Selected High Quality Products</li>
+                        <li class="features-list">Preference-Based Delivery</li>
+                        <li class="features-list">Supports Local Products</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- Login Form -->
+
+        <div class="row">
+            <section class="section-form">
+                <div class="form-content">
+                    <form action="home.html" id="loginForm">
+                        <label for="email">E-mail Address</label>
+                        <input class="form-input" type="text" name="email" id="loginEmail" placeholder="Input Your E-mail Address" required><br>
+                        <span class="invalid" id="loginEmailValidation"></span>
+                        <label for="password">Password</label>
+                        <input class="form-input" type="password" name="password" id="loginPassword" placeholder="Input Your Password" required><br>
+                        <span class="invalid" id="loginPasswordValidation"></span>
+                        <div>
+                            <span>
+                                <input class="form-input" type="checkbox" name="remember" id="remember">
+                                <label style="display: inline-block">Remember Me</label>
+                            </span>
+                            <span>
+                                <p style="display: inline-block" class="form-p"><a href="#"><strong>Forgot Your Password?</strong></a></p>
+                            </span>
+                        </div>
+                        <input class="form-button" type="submit" value="Login" onclick="loginValidation()">
+                        <p class="form-p">Dont' Have an Account? <a href="register.html"><strong>Register Here</strong></a></p>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    </body>
+</html>

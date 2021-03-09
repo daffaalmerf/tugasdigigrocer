@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Register DigiGrocer - 1904207 - Daffa Almer Fauzan</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="image/grocery.png">
+        <script defer src="js/script.js"></script>
+    </head>
+    <body>
+        
+        <!-- Register Information -->
+
+        <div class="container">
+            <div class="row">
+                    <h1>Register</h1>
+                    <h2>DigiGrocer</h2>
+                    <h3>Fulfill Your Grocery Needs</h3>
+                    <ul class="features">
+                        <li class="features-list">Selected High Quality Products</li>
+                        <li class="features-list">Preference-Based Delivery</li>
+                        <li class="features-list">Supports Local Products</li>
+                    </ul>
+                </div>
+
+            <!-- Register Form -->
+
+            <div class="row">
+                <div class="form-content">
+                    <form action="home.html" id="registerForm">
+                        <label for="name">Name</label>
+                        <input class="form-input" type="text" id="name" placeholder="Input Your Name" required>
+                        <span class="invalid" id="regNameValidation"></span>
+                        <label for="email">E-mail Address</label>
+                        <input class="form-input" type="text" name="email" id="email" placeholder="Input Your E-mail Address" required>
+                        <span class="invalid" id="regEmailValidation"></span>
+                        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                            <div style="display: inline-block; margin: 10px 0;">
+                                <span>Gender</span><br><br>
+                                <input type="radio" name="gender" id="male" value="Male" required>
+                                <label style="display: inline" value="male">Male</label>
+                                <input type="radio" name="gender" id="female" value="Female">
+                                <label style="display: inline" value="female">Female</label>
+                            </div>
+                            <div style="display: inline-block; margin-left: 10px">
+                                <span>Age Range</span>
+                                <select class="form-input" name="age" id="age">
+                                    <option class="form-input" value="0-18">Less than 18</option>
+                                    <option class="form-input" value="18-24">18-24</option>
+                                    <option class="form-input" value="25-34">25-34</option>
+                                    <option class="form-input" value="35-44">35-44</option>
+                                    <option class="form-input" value="45-54">45-54</option>
+                                    <option class="form-input" value="55-64">55-64</option>
+                                    <option class="form-input" value="65+">65+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <label for="password">Password</label>
+                        <input class="form-input" type="password" name="password" id="password" placeholder="Input Your Password (8 - 12 characters)" required>
+                        <span class="invalid" id="regPasswordValidation"></span>
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input class="form-input" type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Your Password" required>
+                        <span class="invalid" id="regConfirmPasswordValidation"></span>
+                        <p class="form-p" id="agreement">By signing up, you agree to DigiGrocer's <a href="#"><strong>Terms & Conditions</strong></a> and <a href="#"><strong>Privacy Policies</strong></a></p>
+                        <input class="form-button " id="registerBtn" type="submit" value="Register" onclick="registerValidation()">
+                        <p class="form-p">Already Have an Account? <a href="index.html"><strong>Log In Here</strong></a></p>
+                    </form>
+            </div>
+        </div>
+    </body>
+</html>
